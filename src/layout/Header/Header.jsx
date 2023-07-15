@@ -4,7 +4,11 @@ import Darkmode from "darkmode-js";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const darkMode = new Darkmode();
+  const options = {
+    autoMatchOsTheme: false,
+    saveInCookies: false,
+  };
+  const darkMode = new Darkmode(options);
   return (
     <header className={`${styles.app_header}`}>
       <div className={`${styles.app_header_container} container`}>

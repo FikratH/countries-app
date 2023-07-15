@@ -2,13 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "./Index.module.css";
 import SearchInput from "../../components/SearchInput/SearchInput";
 import SelectComponent from "../../components/SelectComponent/SelectComponent";
-import { Space, Select, Card } from "antd";
 import CountryCard from "../../components/CountryCard/CountryCard";
 import axios from "axios";
 import MainContext from "../../contexts/MainContext";
 import isNullOrWhitespace from "../../utils/functions/isNullOrWhiteSpace";
 import { LoadingOutlined } from "@ant-design/icons";
-import { Spin, Tag } from "antd";
+import { Spin } from "antd";
 import { Helmet } from "react-helmet";
 
 const antIcon = (
@@ -31,7 +30,7 @@ const Index = () => {
           "https://restcountries.com/v3.1/all?fields=unMember,name,capital,population,flags,region"
         )
         .then((res) => {
-          setData([...res.data.filter((country) => country.unMember == true)]);
+          setData([...res.data.filter((country) => country.unMember === true)]);
         })
         .then(() => {
           setIsLoading(false);
