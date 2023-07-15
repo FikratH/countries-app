@@ -1,0 +1,112 @@
+.app_details_body {
+  padding-top: 90px;
+  padding-bottom: 250px;
+}
+
+.app_details_body_back_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  margin-bottom: 90px;
+}
+
+.app_details_body_detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.app_details_body_detail_right {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.app_details_body_detail_right_title {
+  color: #111517;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.app_details_body_detail_right_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.app_details_body_detail_right_info_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.app_details_body_detail_right_info_list_item {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.app_details_body_detail_right_info_list_item b {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 200% */
+}
+
+.app_details_body_detail_right_footer_title {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 56px;
+}
+
+.no_borders {
+  color: #111517;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+/* @media (max-width: 1279px) {
+  .app_details_body_detail_right_info {
+    gap: 80px;
+  }
+} */
+
+@media (max-width: 992px) {
+  .app_details_body_detail_right_info_list_item,
+  .app_details_body_detail_right_info_list_item b,
+  .app_details_body_detail_right_footer_title {
+    font-size: 14px;
+  }
+  .tag {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app_details_body_detail {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,35 @@
+.app_header {
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #fff;
+}
+
+.app_header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app_header_logo {
+  color: #111517;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.app_header_darkmode_btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .app_header_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
