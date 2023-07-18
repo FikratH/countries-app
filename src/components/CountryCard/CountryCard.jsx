@@ -25,11 +25,9 @@ const CountryCard = ({ name, image, population, region, capital }) => {
             <p className={styles.card_description_title}>
               <b>Capital:</b> {capital}
             </p>
-            <Link to={`/details/${name}`}>
-              <Button type="primary" className={styles.card_description_btn}>
-                Details
-              </Button>
-            </Link>
+            <Button type="primary" className={styles.card_description_btn}>
+              Details
+            </Button>
           </div>
         </div>
       </Card>
